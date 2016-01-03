@@ -20,8 +20,8 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='benchit',
-    version='0.2',
+    name='bench-it',
+    version='0.2.1',
     packages=find_packages(),
     include_package_data=True,
     license=license,

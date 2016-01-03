@@ -3,6 +3,7 @@
 Quickly find where your code is spending its time.
 
 [![Build Status](https://secure.travis-ci.org/scuml/benchit.png?branch=master)](http://travis-ci.org/scuml/benchit)
+[![Downloads](https://img.shields.io/pypi/dw/bench-it.svg)](https://pypi.python.org/pypi/bench-it)
 
 ### Example
 
