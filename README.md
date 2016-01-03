@@ -2,6 +2,8 @@
 
 Quickly find where your code is spending its time.
 
+[![Build Status](https://secure.travis-ci.org/scuml/benchit.png?branch=master)](http://travis-ci.org/scuml/benchit)
+
 ### Example
 
     >>> from benchit import BenchIt
