@@ -5,7 +5,7 @@ import os
 sys.path.insert(0, os.path.abspath('../'))
 
 # Add capture context_manager to test sys.out
-from cStringIO import StringIO
+from StringIO import StringIO
 from contextlib import contextmanager
 
 @contextmanager
