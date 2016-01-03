@@ -2,6 +2,7 @@ from .context import *
 
 import unittest
 from benchit import BenchIt
+
 class BenchItSuite(unittest.TestCase):
 
     def test_benchit(self):
@@ -13,7 +14,7 @@ class BenchItSuite(unittest.TestCase):
 
         # Ensure start key is set on init
         self.assertEqual(len(b), 1)
-        self.assertEqual(b.keys(), ['_start'])
+        self.assertIn('_start', b.keys())
 
         # Set a marker
         b.mark('Unique Marker')

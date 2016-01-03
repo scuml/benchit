@@ -2,7 +2,7 @@ import sys
 import os
 
 # Allow tests to be run from self
-sys.path.insert(0, os.path.abspath('../'))
+sys.path.insert(0, os.path.abspath('./benchit'))
 
 # Add capture context_manager to test sys.out
 try:
