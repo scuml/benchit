@@ -24,7 +24,7 @@ with open('LICENSE') as f:
 
 setup(
     name='bench-it',
-    version='0.2.3',
+    version='0.2.4',
     description='Quick and easy python benchmarking.',
     url='http://github.com/scuml/benchit',
     packages=find_packages(where="src"),

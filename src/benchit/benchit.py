@@ -2,7 +2,7 @@ from __future__ import print_function
 
 from collections import OrderedDict
 from time import time
-from prettytable import PrettyTable
+from .prettytable import PrettyTable
 import inspect
 
 class BenchIt(OrderedDict):
