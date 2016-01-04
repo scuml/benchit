@@ -1,9 +1,15 @@
-## benchit - Quick n' Dirty Python Benchmarkin'
+## benchit - Quick n' Easy Python Benchmarking
 
 Quickly find where your code is spending its time.
 
 [![Build Status](https://secure.travis-ci.org/scuml/benchit.png?branch=master)](http://travis-ci.org/scuml/benchit)
 [![Downloads](https://img.shields.io/pypi/dw/bench-it.svg)](https://pypi.python.org/pypi/bench-it)
+
+Benchit is intended to be a minimalistic library that times how long it takes to get from line A to line B.  It helps detect unoptimized code.
+
+### Installation
+
+    pip install bench-it
 
 ### Example
 
@@ -32,16 +38,23 @@ Instantiating the class starts the timer.
 
     b = BenchIt()
 
+Set a marker after some code.
+
+    b.mark("Stuff Done")
+
+Stop and display the table for analysis.
+
+    b.display()
 
 ### Methods
 
-`__init__()` Instantiate and start the timer.
+`benchit.__init__()` Instantiate and start the timer.
 
 `benchit.mark(marker_name)` Add marker at this point.
 
 `benchit.stop()` Stop the timer.
 
-`benchit.display(marker_name)` Display the table.  Stops the timer if running.
+`benchit.display()` Display the table.  Stops the timer if running.
 
 
 ###### Credits
