@@ -1,8 +1,4 @@
-from __future__ import absolute_import
-
-from .benchit import (
-    BenchIt
-)
+from .benchit import *
 
 __all__ = [
     "BenchIt",

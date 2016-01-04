@@ -5,6 +5,7 @@ from setuptools import setup, find_packages
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
+
 if 'publish' in sys.argv:
     if 'test' in sys.argv:
         os.system('python setup.py sdist bdist_wheel upload -rtest')
@@ -24,7 +25,7 @@ with open('LICENSE') as f:
 
 setup(
     name='bench-it',
-    version='0.2.4',
+    version='0.2.5',
     description='Quick and easy python benchmarking.',
     url='http://github.com/scuml/benchit',
     packages=find_packages(where="src"),
