@@ -47,9 +47,9 @@ class BenchIt(OrderedDict):
         """
         Output the benchmark results in a table
         """
-        x = PrettyTable(["Marker", "Method", "Line", "Loops", "Avg Time", "Runtime", "Percent"])
+        x = PrettyTable(["Marker", "Method", "Line", "Hits", "Avg Time", "Runtime", "Percent"])
         x.align["Marker"] = "l"
-        x.align["Loops"] = "r"
+        x.align["Hits"] = "r"
         x.align["Avg Time"] = "r"
         x.align["Runtime"] = "r"
         x.align["Percent"] = "r"
