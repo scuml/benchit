@@ -13,11 +13,10 @@ if 'publish' in sys.argv:
         os.system('python setup.py sdist bdist_wheel upload')
     sys.exit()
 
-try:
-    import pypandoc
-    description = pypandoc.convert('README.md', 'rst')
-except (IOError, ImportError):
-    description = open('README.md').read()
+import pypandoc
+description = pypandoc.convert('README.md', 'rst')
+# except (IOError, ImportError):
+#     description = open('README.md').read()
 
 
 with open('LICENSE') as f:
@@ -25,7 +24,7 @@ with open('LICENSE') as f:
 
 setup(
     name='bench-it',
-    version='1.0.0',
+    version='1.0.1',
     description='Quick and easy python benchmarking.',
     url='http://github.com/scuml/benchit',
     packages=find_packages(where="src"),
