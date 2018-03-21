@@ -17,7 +17,7 @@ try:
     import pypandoc
     description = pypandoc.convert('README.md', 'rst')
 except (IOError, ImportError):
-    description = ''
+    description = open('README.md').read()
 
 
 with open('LICENSE') as f:
@@ -25,7 +25,7 @@ with open('LICENSE') as f:
 
 setup(
     name='bench-it',
-    version='0.2.5',
+    version='1.0.0',
     description='Quick and easy python benchmarking.',
     url='http://github.com/scuml/benchit',
     packages=find_packages(where="src"),
@@ -35,18 +35,17 @@ setup(
     author_email='stephen@echodot.com',
     package_dir={"": "src"},
     package_data={'': ['LICENSE']},
-    classifiers=(
+    classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Natural Language :: English',
-        'Topic :: Internet :: WWW/HTTP',
+        'Topic :: Software Development',
         'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
-    ),
+        'Programming Language :: Python :: 3.6',
+    ],
 )

@@ -9,13 +9,6 @@ python setup.py sdist bdist_wheel
 FILE=`ls -1 dist/*.whl | tail -n 1`
 echo "Verifying build of $FILE"
 
-if [ -z "$1" ] || [ "$1" -eq "2" ]; then
-    echo "# Installing virtualenv for Python 2"
-    rm -rf 27-sdist  # ensure clean state if ran repeatedly
-    virtualenv 27-sdist
-    27-sdist/bin/pip install $FILE
-    27-sdist/bin/python -c'from benchit import BenchIt; b = BenchIt(); b.display()'
-fi
 
 if [ -z "$1" ] || [ "$1" -eq "3" ]; then
     echo "# Installing virtualenv for Python 3"
